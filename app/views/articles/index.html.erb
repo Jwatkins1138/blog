@@ -1,14 +1,20 @@
-<h1>Articles</h1>
-
-<ul>
-  <% @articles.each do |article| %>
-    <li>
-      <%= link_to article.title, article %>
-    </li>
-  <% end %>
-</ul>
-
-<%= link_to "New Article", new_article_path %>
+<div id="index_main">
+  <div id="index_top">
+    <h1>Jason's Mystical Scrivenings</h1>
+    
+  </div>
+  <div id='articles'>
+    <% @articles.each do |article| %>
+      
+        <%= link_to article.title, article %>
+      
+    <% end %>
+  </div>
+  
+  <div id='footer'>
+  <%= link_to "New Article", new_article_path %>
+  </div>
+</div>
 
 
 
