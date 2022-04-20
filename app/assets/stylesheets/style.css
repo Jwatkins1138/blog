@@ -5,7 +5,7 @@ html {
   background-color: aquamarine;
 }
 
-#index_main {
+#indexMain {
   width: 80vw;
   height: 120vh;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -13,21 +13,87 @@ html {
   display: grid;
   grid-template-rows: 2fr 6fr 1fr;
 }
+#showMain {
+  width: 80vw;
+  height: 120vh;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: white;
+  display: grid;
+  grid-template-rows: 2fr 6fr auto;
+}
 
-#index_top {
+#indexTop {
   display: flex;
   justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+#showTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 #articles {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 60vh;
+  max-height: 100%;
+  overflow-y: scroll;
+  overflow-x:hidden;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
+}
+#showArticles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 60vh;
+  max-height: 100%;
+  overflow-y: scroll;
+  overflow-x:hidden;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.articleBox {
+  margin: 5px;
+  width: 70vw;
+  min-height: 30vh;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  border-bottom: 1px solid black;
+}
+
+.boxHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.articleBox > p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 #footer {
   display: flex;
   justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#showFooter {
+  display: flex;
+  flex-direction: column;
+  /* align-items: ; */
+  min-height: 60vh;
+  max-height: 100%;
+  overflow-y: scroll;
+  overflow-x:hidden;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 

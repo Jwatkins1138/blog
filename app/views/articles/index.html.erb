@@ -1,13 +1,17 @@
-<div id="index_main">
-  <div id="index_top">
+<div id='indexMain'>
+  <div id='indexTop'>
     <h1>Jason's Mystical Scrivenings</h1>
     
   </div>
   <div id='articles'>
     <% @articles.each do |article| %>
-      
-        <%= link_to article.title, article %>
-      
+        <div class='articleBox'>
+          <div class='boxHeader'>
+            <h2><%= article.title %></h2>
+            <%= link_to 'view full article', article %>
+          </div>
+        <p><%= article.body %></p>
+        </div>
     <% end %>
   </div>
   
